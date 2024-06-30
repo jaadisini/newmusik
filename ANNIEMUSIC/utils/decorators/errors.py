@@ -3,7 +3,7 @@ from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from config import LOG_GROUP_ID
+from config import LOGGER_ID
 from ANNIEMUSIC import app
 
 
