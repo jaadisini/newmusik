@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from ANNIEMUSIC import app
 
 def first_page(_):
-	controll_button = [InlineKeyboardButton(text="๏ ᴍᴇɴᴜ ๏", callback_data=f"settingsback_helper"), InlineKeyboardButton(text="๏ ɴᴇxᴛ ๏", callback_data=f"AYUSHI")]
+	controll_button = [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data=f"settingsback_helper"), InlineKeyboardButton(text="๏ ɴᴇxᴛ ๏", callback_data=f"AYUSHI")]
 	first_page_menu = InlineKeyboardMarkup(
 		[
 			[InlineKeyboardButton(text=_["H_B_1"], callback_data="help_callback hb1"), InlineKeyboardButton(text=_["H_B_2"], callback_data="help_callback hb2"),InlineKeyboardButton(text=_["H_B_3"], callback_data="help_callback hb3")],
@@ -20,7 +20,7 @@ def first_page(_):
 
 
 def second_page(_):
-	controll_button = [InlineKeyboardButton(text="๏ ʙᴀᴄᴋ ๏", callback_data=f"settings_back_helper")]
+	controll_button = [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settings_back_helper")]
 	second_page_menu = InlineKeyboardMarkup(
 		[
 			[InlineKeyboardButton(text=_["H_B_16"], callback_data="help_callback hb16"), InlineKeyboardButton(text=_["H_B_17"], callback_data="help_callback hb17"),InlineKeyboardButton(text=_["H_B_18"], callback_data="help_callback hb18")],
@@ -221,7 +221,7 @@ def private_help_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="💗 ʜᴇʟᴘ 💗",
+                text="ʜᴇʟᴘ",
                 callback_data="settings_back_helper",
             ),
         ],
