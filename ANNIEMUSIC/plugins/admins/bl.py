@@ -9,7 +9,7 @@ from pyrogram.types import ChatPermissions, Message
 
 from ANNIEMUSIC import app
 from ANNIEMUSIC.misc import SUDOERS
-from ANNIEMUSIC.utils.decorators.errors import capture_err
+from ANNIEMUSIC.utils.errors import capture_err
 from ANNIEMUSIC.utils.decorators.permissions import adminsOnly
 from ANNIEMUSIC.utils.decorators.admins import list_admins
 from ANNIEMUSIC.utils.database import (
