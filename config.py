@@ -7,13 +7,13 @@ from pyrogram import filters
 load_dotenv()
 
 # Telegram API credentials - Get these from the Telegram API website
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "23770828"))
+API_HASH = getenv("API_HASH", "2d3e87f244740e5c8286591940e24cd4")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Specify where to get the following credentials
-OWNER_USERNAME = getenv("OWNER_USERNAME", "JARVIS_V2")
-BOT_USERNAME = getenv("BOT_USERNAME", "Annie_Music_Robot")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "mitsukigawa")
+BOT_USERNAME = getenv("BOT_USERNAME", "mitsuki music")
 BOT_NAME = getenv("BOT_NAME", "˹𝐀ɴɴɪᴇ ✘ 𝙼ᴜsɪᴄ˼ ♪")
 ASSUSERNAME = getenv("ASSUSERNAME", "Snowfall_xc")
 EVALOP = list(map(int, getenv("EVALOP", "6797202080").split()))
