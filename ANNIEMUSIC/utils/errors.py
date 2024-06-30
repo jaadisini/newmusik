@@ -1,10 +1,10 @@
+import sys
 import traceback
 from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
-
-from config import LOGGER_ID
 from ANNIEMUSIC import app
+from ANNIEMUSIC.logging import LOGGER
 
 
 def split_limits(text):
@@ -20,8 +20,8 @@ def split_limits(text):
         else:
             result.append(small_msg)
             small_msg = line
-    else:
-        result.append(small_msg)
+
+    result.append(small_msg)
 
     return result
 
@@ -35,7 +35,12 @@ def capture_err(func):
             await app.leave_chat(message.chat.id)
             return
         except Exception as err:
-            errors = traceback.format_exc()
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            errors = traceback.format_exception(
+                etype=exc_type,
+                value=exc_obj,
+                tb=exc_tb,
+            )
             error_feedback = split_limits(
                 "**ERROR** | `{}` | `{}`\n\n```{}```\n\n```{}```\n".format(
                     0 if not message.from_user else message.from_user.id,
@@ -45,7 +50,7 @@ def capture_err(func):
                 ),
             )
             for x in error_feedback:
-                await app.send_message(LOGGER_ID, x)
+                await app.send_message(LOGGER, x)
             raise err
 
     return capture
