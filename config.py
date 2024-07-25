@@ -9,21 +9,21 @@ load_dotenv()
 # Telegram API credentials - Get these from the Telegram API website
 API_ID = int(getenv("API_ID", "23770828"))
 API_HASH = getenv("API_HASH", "2d3e87f244740e5c8286591940e24cd4")
-BOT_TOKEN = getenv("BOT_TOKEN", "7098894492:AAFUxwqXZ_PSfisuy1LpcqUu0jczIBoCglA")
+BOT_TOKEN = getenv("BOT_TOKEN", "7414737614:AAEEkNRv2LH2yXR5RXG21hgmYoDkL7PFlrM")
 
 # Specify where to get the following credentials
-OWNER_USERNAME = getenv("OWNER_USERNAME", "mitsukigawa")
-BOT_USERNAME = getenv("BOT_USERNAME", "cillxmusikbot")
-BOT_NAME = getenv("BOT_NAME", "𝗠𝗜𝗧𝗦𝗨𝗞𝗜 ✘ 𝗠𝗨𝗦𝗜𝗖 ♪")
-ASSUSERNAME = getenv("ASSUSERNAME", "kaypunyaaj")
-EVALOP = list(map(int, getenv("EVALOP", "1665921917").split()))
+OWNER_USERNAME = getenv("OWNER_USERNAME", "dza4yua")
+BOT_USERNAME = getenv("BOT_USERNAME", "Dzamusicbot")
+BOT_NAME = getenv("BOT_NAME", "𝗗𝘇𝗮 ✘ 𝗠𝘂𝘀𝗶𝗰 ♪")
+ASSUSERNAME = getenv("ASSUSERNAME", "Assistantcill")
+EVALOP = list(map(int, getenv("EVALOP", "1772178258").split()))
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://erkbwrs084:909090@cluster0.qdrfgmb.mongodb.net/?retryWrites=true&w=majority")
 LOGGER_ID = int(getenv("LOGGER_ID", -1002070417836))
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # External APIs - Get these from their respective providers
 GPT_API = getenv("GPT_API")
 DEEP_API = getenv("DEEP_API")
-OWNER_ID = int(getenv("OWNER_ID", 7149602071))
+OWNER_ID = int(getenv("OWNER_ID", 1470077776))
 
 # Heroku deployment settings - Refer to Heroku documentation on how to obtain these
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
@@ -33,8 +33,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Support and contact information - Provide your own support channels
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/thebrazzernew")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/thebrazzernew")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/speakupable")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DzaInfo")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -54,7 +54,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 
 # Pyrogram session strings - You need to generate these yourself
-STRING1 = getenv("STRING_SESSION", "BQFqtswAd8QKsig60J_knt-8ntDR4zV6onr-9WtJHoGcikECQMshrR4FtqPvmXOSW92N9ov9GXs_A9Dn5v6GmAGCsLR2gsQhBGR63-wXThZ6JqYRZmufxFEX0YKHazQSZDIhAdePZYWOvRrGIg04GVQbUXcT8govwbQPRzJWG5y8SJDbvPi3oaPRPalxOCEwB45T0wjYAJAeR-2UgxsauxOCPqxHc1sBrsg_-9vZR1Ty-qFotYVYOYNKN-As-Tj7cmgGkyTIHrOjWpYZlknDNX67BgVe2J82saqRfaZkO5e3r95ze9U-aoh-uLKBZ5CNBO0EzHpXSn2DdLr5mxiRAq-ZhH_LewAAAABjS_N9AA")
+STRING1 = getenv("STRING_SESSION", "BQFqtswALT6P4wKSSupEjQ5vkJgyLIm3cxUX5C8ylaiFty366e69Vwe4L1nePxL5ov60NB86pcTCFzCmJMXSJ7V3Ma17wnuuJI_n-nBK1b8TvSa8B8-tULut8_v63vQgh3NHuBZMhi7Rw-ytwM1PPBGGTADkehDTA73LI1KaNblWaAVIQZz12s7COqL_rPJzvGWLRtkccp-byPXW6J26liWkcIefGiImPcqoSW6b4fbmcfcsPPTfyw52x1nows7Lhzasx3z0M_ZofICzqzn4S2nhAy1JekmUoCIx7EpTkOaGkZa9yS0IXbvXFoWH2MtdN4HKqidGFRpk392jbmjqoG5ZAlR3xAAAAABpoUtSAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
