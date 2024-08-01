@@ -7,23 +7,23 @@ from pyrogram import filters
 load_dotenv()
 
 # Telegram API credentials - Get these from the Telegram API website
-API_ID = int(getenv("API_ID", "23770828"))
-API_HASH = getenv("API_HASH", "2d3e87f244740e5c8286591940e24cd4")
-BOT_TOKEN = getenv("BOT_TOKEN", "7414737614:AAEEkNRv2LH2yXR5RXG21hgmYoDkL7PFlrM")
+API_ID = int(getenv("API_ID", "26917284"))
+API_HASH = getenv("API_HASH", "e89fc9ea865e7494f742dab7132d28f9")
+BOT_TOKEN = getenv("BOT_TOKEN", "7250836835:AAGWmAAeQn4bhTbuMW1RhGHc9nCVS6_rXUQ")
 
 # Specify where to get the following credentials
-OWNER_USERNAME = getenv("OWNER_USERNAME", "dza4yua")
-BOT_USERNAME = getenv("BOT_USERNAME", "Dzamusicbot")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "Dza4yu")
+BOT_USERNAME = getenv("BOT_USERNAME", "Dzamusikbot")
 BOT_NAME = getenv("BOT_NAME", "𝗗𝘇𝗮 ✘ 𝗠𝘂𝘀𝗶𝗰 ♪")
-ASSUSERNAME = getenv("ASSUSERNAME", "Assistantcill")
-EVALOP = list(map(int, getenv("EVALOP", "1772178258").split()))
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://erkbwrs084:909090@cluster0.qdrfgmb.mongodb.net/?retryWrites=true&w=majority")
+ASSUSERNAME = getenv("ASSUSERNAME", "DzaAssistant")
+EVALOP = list(map(int, getenv("EVALOP", "1543559565").split()))
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://jembutan1:1234@cluster0.w186hoa.mongodb.net/?retryWrites=true&w=majority")
 LOGGER_ID = int(getenv("LOGGER_ID", -1002070417836))
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # External APIs - Get these from their respective providers
 GPT_API = getenv("GPT_API")
 DEEP_API = getenv("DEEP_API")
-OWNER_ID = int(getenv("OWNER_ID", 1470077776))
+OWNER_ID = int(getenv("OWNER_ID", 1543559565))
 
 # Heroku deployment settings - Refer to Heroku documentation on how to obtain these
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
@@ -33,8 +33,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Support and contact information - Provide your own support channels
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/speakupable")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DzaInfo")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/zeropercentdza")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DzaSupport")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -54,7 +54,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 
 # Pyrogram session strings - You need to generate these yourself
-STRING1 = getenv("STRING_SESSION", "BQFqtswALT6P4wKSSupEjQ5vkJgyLIm3cxUX5C8ylaiFty366e69Vwe4L1nePxL5ov60NB86pcTCFzCmJMXSJ7V3Ma17wnuuJI_n-nBK1b8TvSa8B8-tULut8_v63vQgh3NHuBZMhi7Rw-ytwM1PPBGGTADkehDTA73LI1KaNblWaAVIQZz12s7COqL_rPJzvGWLRtkccp-byPXW6J26liWkcIefGiImPcqoSW6b4fbmcfcsPPTfyw52x1nows7Lhzasx3z0M_ZofICzqzn4S2nhAy1JekmUoCIx7EpTkOaGkZa9yS0IXbvXFoWH2MtdN4HKqidGFRpk392jbmjqoG5ZAlR3xAAAAABpoUtSAA")
+STRING1 = getenv("STRING_SESSION", "BQHHpwsAtvgB-qU7FMotcXVrSpOHLLUGe62cfmnaZ2Nsa3v3pcOScuHjOF5iS2gmSbEqpvizivjcNp0YQpJ1F64WWfkahHZLNTY4rz8ZeFDunXmZGpRaw8zmIDrmN9eYlDV_RisEPM_3Pz3IaszXa3bVpdDVeHeoDrc2-d3Tua5RKehuFN06sDTqgG4ueDVlvI8wXnEcR_u73NdJ7o-Amq9xLsV6Uxlk1b38LINmaVmoWan6LGxbWi6l7gvgSshsRtzyrAp_6KoKJ9i9OEqBot_EdYgCJJ8eRkMb9ava1AMzsakwzFkrKR2USFGicASt30lwF8IUS_mvOBcjH0O30NjNZcLqCgAAAABpoUtSAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -81,23 +81,19 @@ votemode = {}
 autoclean = []
 confirmer = {}
 
-START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/fdbffdb39d20374823466.jpg"
-)
-PING_VID_URL = getenv(
-    "PING_VID_URL", "https://telegra.ph/file/4be43ed2aa6872337e9a8.mp4"
-)
-PLAYLIST_IMG_URL = "https://telegra.ph/file/94e9eca3b0ec6e2dc6cd5.png"
-STATS_VID_URL = "https://telegra.ph/file/e2ab6106ace2e95862372.mp4"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/ef5bdba78c475a9e50d24.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/c8db17e1612487be13571.jpg"
-STREAM_IMG_URL = "https://telegra.ph/file/6a81d918bd5d44c646205.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/1470316a51382cc446fe1.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/06679f04da4b2fbbb12d0.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/06679f04da4b2fbbb12d0.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/06679f04da4b2fbbb12d0.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/06679f04da4b2fbbb12d0.jpg"
-
+START_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+PING_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+GLOBAL_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+STATS_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+STREAM_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+YOUTUBE_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph//file/e3ea7cfbad5b164794cf6.jpg"
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
